@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Project specific — do not commit these
+config.json
+ereader.log
+*.txtcache
+library/
+docs/images/
+
+# Waveshare drivers — fetched separately during setup
+waveshare_epd/
+
+# Backup files
+backup_*.tar.gz
+*_backup.py
+*_working_backup.py
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,20 @@
+[Unit]
+Description=DIY E-Reader Service
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/ereader
+ExecStart=/usr/bin/python3 /home/pi/ereader/main.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/home/pi/ereader/ereader.log
+StandardError=append:/home/pi/ereader/ereader.log
+
+# Allow GPIO and I2C access
+SupplementaryGroups=gpio i2c spi
+
+[Install]
+WantedBy=multi-user.target

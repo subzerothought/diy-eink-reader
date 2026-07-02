@@ -1,0 +1,12 @@
+# DIY E-Ink Reader — Python dependencies
+# Install with: pip3 install --break-system-packages -r requirements.txt
+
+flask
+werkzeug
+smbus2
+pypdf
+pdfminer.six
+ebooklib
+beautifulsoup4
+lxml
+Pillow
